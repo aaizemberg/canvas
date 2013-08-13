@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset=utf-8 />
+  <title>Población en Argentina por provincia</title>
+  <style>
+    body {
+      margin: 0px;
+      padding: 0px;
+    }
+  </style>
+</head>
+<body>
+    <canvas id="myCanvas" width="400" height="300" style="border:1px solid #ccc;">></canvas>
+
+  <script>
+      var canvas = document.getElementById('myCanvas');
+      var context = canvas.getContext('2d');
+
+      var poblacion = [15625084, 3308876, 3194537, 2890151, 1738929, 1448188, 1235994, 1214441, 1101593, 1055259, 992595, 874006, 681055, 673307, 638645, 551266, 530162, 509108, 432310, 367828, 333642, 318951, 273964, 127205];
+
+      context.beginPath();
+      context.lineWidth = 1;
+      context.strokeStyle = 'white';
+
+      for (var i=0; i<poblacion.length; i++) {
+        context.rect(10, 10+(canvas.height/(poblacion.length+1)*i), (canvas.width-20)* poblacion[i]/15625084, canvas.height/(poblacion.length+1));
+        context.fillStyle = 'grey';
+        context.fill();
+      }
+      context.stroke();
+
+    </script>
+  </body>
+</html>

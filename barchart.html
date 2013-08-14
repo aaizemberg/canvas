@@ -24,7 +24,7 @@
       context.strokeStyle = 'white';
 
       for (var i=0; i<poblacion.length; i++) {
-        context.rect(10, 10+(canvas.height/(poblacion.length+1)*i), (canvas.width-20)* poblacion[i]/15625084, canvas.height/(poblacion.length+1));
+        context.rect(10, 10+(canvas.height/(poblacion.length+1)*i), (canvas.width-20)* poblacion[i]/poblacion[0], canvas.height/(poblacion.length+1));
         context.fillStyle = 'grey';
         context.fill();
       }

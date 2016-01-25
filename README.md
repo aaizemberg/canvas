@@ -1,4 +1,6 @@
 canvas
 ======
 
-algunos pequeños experimentos con canvas, html5 y javascript
+Probando html5 <canvas>
+
+[Gráfico de barras](https://aaizemberg.github.io/canvas/barchart.html)
